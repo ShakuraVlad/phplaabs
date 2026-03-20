@@ -63,7 +63,7 @@ php -S localhost:8000
 
 Проверить работоспособность можно по адресу http://localhost:8000
 
-![img1](images\Untitled.png)
+![img1](images/Untitled.png)
 
 ### Шаг 3. Вывод данных в PHP
 
@@ -72,7 +72,7 @@ php -S localhost:8000
 echo "Hello, World with echo!<br />";
 print "Hello, World with print!<br />";
 ```
-![img2](images\Untitled2.png)
+![img2](images/Untitled2.png)
 
 ### Шаг 4. Работа с переменными и выводом
 
@@ -100,7 +100,7 @@ echo "{$days}{$message}<br />";
 ```
 Используйте переход на новую строку в выводе используя тэг \<br />.
 
-![img3](images\Untitled3.png)
+![img3](images/Untitled3.png)
 
 ## Контрольные вопросы
 
