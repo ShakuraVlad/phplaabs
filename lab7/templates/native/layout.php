@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><?= htmlspecialchars($title ?? 'Рецепты') ?></title>
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', sans-serif; background: #f5f5f0; color: #333; }
+        header { background: #2d6a4f; color: #fff; padding: 1rem 2rem; display: flex; align-items: center; gap: 1rem; }
+        header h1 { font-size: 1.4rem; }
+        nav a { color: #b7e4c7; text-decoration: none; margin-left: 1.5rem; font-size: .9rem; }
+        nav a:hover { color: #fff; }
+        main { max-width: 960px; margin: 2rem auto; padding: 0 1rem; }
+        footer { text-align: center; padding: 2rem; color: #888; font-size: .85rem; }
+        .badge { display: inline-block; background: #d8f3dc; color: #2d6a4f; border-radius: 999px;
+                 padding: .2rem .7rem; font-size: .8rem; font-weight: 600; }
+        .badge-mode { background: #fff3cd; color: #856404; }
+    </style>
+</head>
+<body>
+<header>
+    <span style="font-size:1.8rem">🍴</span>
+    <h1>Книга рецептов</h1>
+    <nav>
+        <a href="index.php?mode=native">Нативный PHP</a>
+        <a href="index.php?mode=twig">Twig</a>
+    </nav>
+</header>
+<main>
+    <?= $content ?>
+</main>
+<footer>Лабораторная работа №7 · Шаблонизация PHP</footer>
+</body>
+</html>

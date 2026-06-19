@@ -1,0 +1,173 @@
+/* Общие стили для лабораторной работы "Дневник настроения" */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #2c3e50;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #34495e;
+}
+
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin: 0 10px;
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Форма */
+form label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="number"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+.checkbox-group label {
+    display: inline-block;
+    font-weight: normal;
+    margin-right: 15px;
+}
+
+.checkbox-group input {
+    margin-right: 5px;
+}
+
+.hint {
+    font-size: 12px;
+    color: #888;
+    margin-top: 3px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #2980b9;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1f618d;
+}
+
+/* Сообщения */
+.message {
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 15px;
+}
+
+.message.success {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.message.error {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.errors-list {
+    margin: 0;
+    padding-left: 20px;
+}
+
+/* Таблица */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px 10px;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background-color: #2980b9;
+    color: white;
+}
+
+th a {
+    color: white;
+    text-decoration: none;
+}
+
+th a:hover {
+    text-decoration: underline;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.empty-table {
+    text-align: center;
+    color: #888;
+    margin-top: 20px;
+}
+
+.mood-badge {
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-size: 12px;
+    color: white;
+}
+
+.mood-радостно { background-color: #27ae60; }
+.mood-спокойно { background-color: #2980b9; }
+.mood-грустно { background-color: #7f8c8d; }
+.mood-тревожно { background-color: #e67e22; }
+.mood-злюсь { background-color: #c0392b; }

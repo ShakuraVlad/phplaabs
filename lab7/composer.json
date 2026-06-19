@@ -1,0 +1,12 @@
+{
+  "name": "lab7/recipe-book",
+  "description": "Лабораторная работа №7 — шаблонизация PHP",
+  "require": {
+    "twig/twig": "^3.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  }
+}
